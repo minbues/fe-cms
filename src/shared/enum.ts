@@ -1,0 +1,69 @@
+export enum UserType {
+  ADMIN = 1,
+  USER = 2,
+}
+
+export enum VoucherType {
+  PERCENT = "PERCENT",
+  FIXED = "FIXED",
+}
+
+export enum OrderStatusEnum {
+  PENDING = "PENDING",
+  CONFIRMED = "CONFIRMED",
+  PROCESSING = "PROCESSING",
+  SHIPPING = "SHIPPING",
+  DELIVERED = "DELIVERED",
+  CANCELLED = "CANCELLED",
+}
+
+export enum PaymentMethodEnum {
+  COD = "COD",
+  BANKING = "BANKING",
+}
+
+export enum PaymentStatusEnum {
+  PENDING = "PENDING",
+  PAID = "PAID",
+  FAILED = "FAILED",
+  REFUNDED = "REFUNDED",
+  UNPAID = "UNPAID",
+}
+
+export enum RevenueType {
+  MONTH = "MONTH",
+  QUARTER = "QUARTER",
+  YEAR = "YEAR",
+  RANGE = "RANGE",
+}
+
+export enum SellerType {
+  BEST = "BEST",
+  LEAST = "LEAST",
+}
+
+export enum SocketEvent {
+  ORDER_PAYMENT_EXPIRED = "ORDER_PAYMENT_EXPIRED",
+  USER_CONNECTED = "USER_CONNECTED",
+  USER_DISCONNECTED = "USER_DISCONNECTED",
+  ORDER_STATUS_UPDATED = "ORDER_STATUS_UPDATED",
+  PAYMENT_SUCCESSFUL = "PAYMENT_SUCCESSFUL",
+  JOIN_CONVERSATION = "JOIN_CONVERSATION",
+  SEND_MESSAGE = "SEND_MESSAGE",
+  NEW_MESSAGE = "NEW_MESSAGE",
+  NEW_CONVERSATION = "NEW_CONVERSATION",
+  JOIN_ADMIN = "JOIN_ADMIN",
+}
+
+export enum DiscountEventEnum {
+  ALL_SHOP = "ALL_SHOP",
+  CATEGORY = "CATEGORY",
+  SUBCATEGORY = "SUBCATEGORY",
+}
+
+export enum EventStatusEnum {
+  IN_COMING = "IN_COMING",
+  ON_GOING = "ON_GOING",
+  COMPLETED = "COMPLETED",
+  CANCELLED = "CANCELLED",
+}
