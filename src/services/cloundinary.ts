@@ -1,5 +1,5 @@
 import axios from "axios";
-import { config } from "../config/envConfig";
+// import { config } from "../config/envConfig";
 import { showToast, ToastType } from "../shared/toast";
 
 // const { cloudName, uploadPreset } = config.cloudinary;

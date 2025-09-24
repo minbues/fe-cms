@@ -1,9 +1,9 @@
 import axios from "axios";
-import { config } from "./envConfig";
+// import { config } from "./envConfig";
 import { AxiosErrorResponse } from "../interfaces/axios.interface";
 import { toast } from "react-toastify";
 
-const { baseURL } = config.server;
+// const { baseURL } = config.server;
 
 export const authAxios = axios.create({
   baseURL: 'http://localhost:3000/',
