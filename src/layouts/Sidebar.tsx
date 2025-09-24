@@ -47,14 +47,14 @@ const Sidebar: React.FC = () => {
             fontSize: "28px",
             fontWeight: 600,
             fontFamily: "'Lobster', cursive",
-            color: "#d1567c",
+            color: "black",
             cursor: "pointer",
             userSelect: "none",
             letterSpacing: "1.5px",
           }}
           onClick={() => navigate("/")}
         >
-          Pinky
+          TrendX
         </span>
       </div>
 

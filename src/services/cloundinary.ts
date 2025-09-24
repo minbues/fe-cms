@@ -2,9 +2,10 @@ import axios from "axios";
 import { config } from "../config/envConfig";
 import { showToast, ToastType } from "../shared/toast";
 
-const { cloudName, uploadPreset } = config.cloudinary;
+// const { cloudName, uploadPreset } = config.cloudinary;
 
-const CLOUDINARY_URL = `https://api.cloudinary.com/v1_1/${cloudName}/image/upload`;
+const CLOUDINARY_URL = `https://api.cloudinary.com/v1_1/dzyusd4at/upload`;
+
 
 /**
  * Upload 1 ảnh lên Cloudinary
@@ -14,7 +15,8 @@ const CLOUDINARY_URL = `https://api.cloudinary.com/v1_1/${cloudName}/image/uploa
 export const uploadImage = async (file: File): Promise<string> => {
   const formData = new FormData();
   formData.append("file", file);
-  formData.append("upload_preset", uploadPreset);
+formData.append("upload_preset", 'zsg26eg4');
+
 
   try {
     const response = await axios.post(CLOUDINARY_URL, formData);
